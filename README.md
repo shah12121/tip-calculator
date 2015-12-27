@@ -1,48 +1,50 @@
-# tip-calculator
-Calculate tips
-//
-//  ViewController.swift
-//  tips
-//
-//  Created by Apurva Shah on 12/22/15.
-//  Copyright © 2015 Apurva Shah. All rights reserved.
-//
+# Pre-work - tips
 
-import UIKit
+tips is a tip calculator application for iOS.
 
-class ViewController: UIViewController {
+Submitted by: Apurva
 
-    @IBOutlet weak var billField: UITextField!
-    @IBOutlet weak var tipLabel: UILabel!
-    @IBOutlet weak var tipControl: UISegmentedControl!
-    
-    @IBOutlet weak var totalLabel: UILabel!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        tipLabel.text = "$0.00"
-        totalLabel.text = "$0.00"
-    }
+Time spent: 6 hours spent in total
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+## User Stories
 
-    @IBAction func onEditingChanged(sender: AnyObject) {
+The following **required** functionality is complete:
+* User can enter a bill amount, choose a tip percentage, and see the tip and total values.
 
-        var tipPercentages = [0.18, 0.2, 0.22]
-        var tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
-        var billAmount = NSString(string: billField.text!).doubleValue
-        var tip = billAmount * tipPercentage
-        var total = billAmount + tip
-        
-        
-        tipLabel.text = String(format: "$%.2f", tip)
-        totalLabel.text = String(format: "$%.2f", total)
-    }
+The following features are implemented:
+- Color implementation for easy viewing in dim lighting restaurants
+- App icon personalization
+- Adjusted tint of text for clear sight
+- Split bill option for easy bill dividing
 
-    @IBAction func onTap(sender: AnyObject) {
-    view.endEditing(true)
-    }
-}
+
+## Video Walkthrough 
+
+Here's a walkthrough of implemented user stories:
+
+<img src='http://imgur.com/JVLMrYT' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+GIF created with [CloudConvert](https://cloudconvert.com/mov-to-gif).
+
+## Notes
+
+Describe any challenges encountered while building the app.
+-Recording Gif (Could not install LiceCap)
+-Pushing to Github
+-Animating the text
+
+## License
+
+    Copyright [2015] [Apurva Shah]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
