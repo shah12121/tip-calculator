@@ -22,7 +22,7 @@ The following features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://imgur.com/JVLMrYT' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/JVLMrYT.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [CloudConvert](https://cloudconvert.com/mov-to-gif).
 
